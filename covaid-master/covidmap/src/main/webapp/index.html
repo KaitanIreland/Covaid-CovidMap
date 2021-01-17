@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>covidmap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="title">
+        <div id="title-text">
+        <p>COVAID</p>
+        </div>
+    <div id="info">
+        <div id="info-text">
+        <p>COVAID by SPS-SU20 Team 31 provides information about Covid-19 related resources for those in need.</p>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+    <div id="shared">
+        <div id="newsbox">
+            <form class="search" action="">
+                    <label for"">Enter Location: </label>
+                <input class="input" type="text" />
+                <input type="submit" onclick="getNews()" />
+            </form>
+
+            <div class="container" id="newsDiv">
+                <div id="location-info"></div>
+                <ul class="news-list"></ul>
+            </div>
+        </div>
+
+        <div id="map">
+            <p>map </p>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <p>Footer/Contact</p>
+    </div> 
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxUGiJyrg2E11PGuIodBUWT3ZRPmdYe1U&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
